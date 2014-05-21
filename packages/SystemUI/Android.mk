@@ -3,6 +3,8 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE_TAGS := optional
 
+LOCAL_CFLAGS += -funroll-loops -frename-registers -fgcse-sm -fgcse-las
+
 LOCAL_SRC_FILES := $(call all-java-files-under, src) \
     src/com/android/systemui/EventLogTags.logtags
 

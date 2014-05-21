@@ -5,8 +5,10 @@ include $(CLEAR_VARS)
 
 # setup for skia optimizations
 #
+LOCAL_CFLAGS += -funroll-loops -frename-registers -fgcse-sm -fgcse-las
+
 ifneq ($(ARCH_ARM_HAVE_VFP),true)
-	LOCAL_CFLAGS += -DSK_SOFTWARE_FLOAT
+	LOCAL_CFLAGS += -DSK_HARDWARE_FLOAT
 endif
 
 ifeq ($(ARCH_ARM_HAVE_NEON),true)

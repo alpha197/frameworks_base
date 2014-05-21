@@ -213,7 +213,7 @@ LOCAL_SHARED_LIBRARIES := \
 	libharfbuzz_ng \
 	libz
 
-TARGET_arm_CFLAGS += -DUSE_NEON_BITMAP_OPTS -mfpu=neon-vfpv4 -mtune=cortex-a15 -mcpu=cortex-a15 -mvectorize-with-neon-quad -fgcse-las -funroll-loops -funsafe-loop-optimizations -funswitch-loops -fpredictive-commoning -fgcse-after-reload
+TARGET_arm_CFLAGS += -DUSE_NEON_BITMAP_OPTS -mvectorize-with-neon-quad -funroll-loops -frename-registers -fgcse-sm -fgcse-las
 LOCAL_SRC_FILES+= \
 		android/graphics/Bitmap.cpp.arm
 
