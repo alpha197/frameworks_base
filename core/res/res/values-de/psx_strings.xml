@@ -3,8 +3,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     
     <!-- Button to reboot the phone, within the Phone Options dialog -->
-    <string name="reboot_system" product="tablet">Nexus Neustarten</string>
-    <string name="reboot_system" product="default">Nexus Neustarten</string>
+    <string name="reboot_system" product="tablet">Nexus neu starten</string>
+    <string name="reboot_system" product="default">Nexus neu starten</string>
     <!-- Reboot Progress Dialog. This is shown if the user chooses to reboot the phone. -->
     <string name="global_action_screenshot">Screenshot</string>
     <!-- Button to reboot the phone, within the Reboot Options dialog -->
